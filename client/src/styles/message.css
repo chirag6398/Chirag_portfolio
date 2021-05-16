@@ -1,0 +1,156 @@
+.message__container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.message__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  flex-wrap: wrap;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.5);
+  /* background-color: blueviolet; */
+  max-width: 800px;
+  border-radius: 5px;
+  padding: 40px 10px;
+}
+.message__illustrator {
+  display: flex;
+  flex: 0.6;
+}
+.message__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0.4;
+  /* align-self: row-reverse; */
+}
+fieldset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 59px;
+  padding: 10px 10px;
+}
+label {
+  margin-bottom: 0px;
+  margin-right: 12px;
+}
+
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+input:focus {
+  outline: none;
+}
+textarea {
+  border: 0.5px solid lightgray;
+  outline: none;
+  padding: 5px 5px;
+  background-color: transparent;
+}
+textarea:focus {
+  outline: none;
+}
+button {
+  border: none;
+  text-align: center;
+  width: 100px;
+  transition: 1s all ease-in;
+  height: 30px;
+  border-radius: 4px;
+}
+button:hover {
+  background-color: tomato;
+}
+.message__illustrator > svg {
+  object-fit: contain;
+  height: 200px;
+  max-width: 460px;
+}
+#eye1 {
+  animation-name: eye1;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-delay: 0.2s;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+@keyframes eye1 {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-40px);
+    /* transform: translateY(40px); */
+  }
+}
+#eye2 {
+  animation-name: eye2;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+
+  animation-direction: alternate;
+}
+@keyframes eye2 {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-40px);
+    /* transform: translateY(40px); */
+  }
+}
+#mouth {
+  animation-name: mouth;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  /* animation-delay: 0.5s; */
+  animation-direction: alternate;
+}
+@keyframes mouth {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(1deg);
+    /* transform: translateY(40px); */
+  }
+}
+
+.message__textfield {
+  display: flex;
+  align-items: baseline;
+}
+
+@media screen and (max-width: 500px) {
+  .message__illustrator > svg {
+    /* object-fit: contain; */
+    height: 125px;
+  }
+  .message__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: none;
+    padding: 20px 0px;
+  }
+  .message__illustrator {
+    flex: 1;
+    margin-bottom: 10px;
+  }
+  .message__form {
+    width: 100%;
+    /* align-self: row-reverse; */
+  }
+}

@@ -1,0 +1,53 @@
+.contact__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 20px 20px;
+  flex-wrap: wrap;
+}
+.contact__container__dark {
+  color: #fff;
+}
+.contact__span {
+  font-weight: bolder;
+  font-size: 30px;
+}
+.contact__leftSide {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact__leftSide > div > img {
+  height: 1px;
+  object-fit: contain;
+  position: relative;
+  top: 13px;
+  margin-right: 5px;
+}
+.contact__rightSide {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  justify-content: center;
+  /* align-items: center; */
+}
+.contact__phone {
+  margin: 17px;
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+}
+.contact__email {
+  margin: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+}

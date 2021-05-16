@@ -1,0 +1,11 @@
+.profile__container {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+.profile__darkContainer {
+  transition: 1s all ease-in;
+  background-color: black !important;
+}

@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Goblin+One&family=Poppins&display=swap");
+.nav__container {
+  height: 60px;
+  position: sticky;
+  top: 0px;
+  width: 100vw;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 0px 30px;
+  justify-content: space-between;
+}
+.nav__show__onDark {
+  transition: 0.5s all linear;
+  background-color: rgb(12, 12, 12);
+  box-shadow: -6px -9px 10px 4px rgb(0 0 0);
+}
+.nav__rightContent__darkMode {
+  background-color: #fff;
+  height: 50px;
+  border-radius: 5px;
+}
+.nav__rightContent {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  justify-content: space-evenly;
+}
+
+.nav__show {
+  transition: 0.5s all linear;
+  background-color: #fff;
+  box-shadow: -6px -9px 10px 4px rgb(0 0 0);
+}
+.nav__logo {
+  min-width: 197px;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__span1 {
+  color: white;
+}
+.nav__span2 {
+  color: brown;
+}
+.nav__icons__sun {
+  font-size: 20px;
+  cursor: pointer;
+  color: #fbdd74;
+}
+.nav__icons__toggleRight {
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+}
+.nav__icons__toggleLeft {
+  font-size: 20px;
+  cursor: pointer;
+}
+.nav__icons__night {
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+}
+.nav__logo > p {
+  font-family: "Goblin One", cursive;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.nav__icons__toggleRight_notShow {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.nav__icons__night_notShow {
+  font-size: 20px;
+  color: #fff;
+}
