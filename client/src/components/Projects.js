@@ -27,30 +27,59 @@ export default function Project() {
       <div data-aos="fade-right" className="project__section__heading">
         <h3>Mini-Projects</h3>
       </div>
+
       <div className="project__img__container">
         <div data-aos="fade-up" className="project__imgContainer">
           <img alt="loading.." src={netflix} style={{ width: "430.41px" }} />
-          <div className="project__imgOverlay">
-            <span>Netflix-Clone</span>
-          </div>
+          <a
+            href="https://netflix-clone-by.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <div className="project__imgOverlay">
+              <span>Netflix-Clone</span>
+            </div>
+          </a>
         </div>
         <div data-aos="fade-up" className="project__imgContainer">
           <img alt="loading.." src={instagram} />
-          <div className="project__imgOverlay">
-            <span>Instagram-Clone</span>
-          </div>
+          <a
+            href="https://instagram-by-ch.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <div className="project__imgOverlay">
+              <span>Instagram-Clone</span>
+            </div>
+          </a>
         </div>
         <div data-aos="fade-up" className="project__imgContainer">
           <img alt="loading.." src={gitfetch} />
-          <div className="project__imgOverlay">
-            <span>Fetch-Repo</span>
-          </div>
+          <a
+            href="https://netflix-clone-by.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <div className="project__imgOverlay">
+              <span>Fetch-Repo</span>
+            </div>
+          </a>
         </div>
         <div data-aos="fade-up" className="project__imgContainer">
           <img alt="loading.." src={mern} />
-          <div className="project__imgOverlay">
-            <span>Authentication </span>
-          </div>
+          <a
+            href="https://mernfirstproject.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <div className="project__imgOverlay">
+              <span>Authentication </span>
+            </div>
+          </a>
         </div>
       </div>
     </div>
