@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import illus from "../images/chatIllus1.svg";
 import "../styles/message.css";
 export default function Message() {
   const [data, setData] = useState({ name: "", email: "", message: "" });
@@ -181,6 +180,9 @@ export default function Message() {
         </div>
         <div className="message__form">
           <form onSubmit={submitHandler}>
+            <h3>
+              <b>Let's Talk</b>
+            </h3>
             <fieldset>
               <label>Name</label>
               <input
