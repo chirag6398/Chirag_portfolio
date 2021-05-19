@@ -4,7 +4,12 @@
   display: flex;
   flex-direction: column;
   z-index: 1;
+  overflow: scroll;
 }
+.profile__container::-webkit-scrollbar {
+  display: none;
+}
+
 .profile__darkContainer {
   transition: 1s all ease-in;
   background-color: black !important;

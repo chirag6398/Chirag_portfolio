@@ -18,10 +18,9 @@ export default function About() {
   let divRef = useRef(null);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      // console.log(window.scrollY);
       if (window.scrollY > 280) {
         setHeight(window.scrollY - 280 + 466);
-        // console.log(height);
+
         setAnimate(true);
       } else {
         if (animate) {

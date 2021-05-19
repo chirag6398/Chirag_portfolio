@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Goblin+One&family=Poppins&display=swap");
 .nav__container {
   height: 60px;
-  position: sticky;
+  position: fixed;
   top: 0px;
-  width: 100vw;
+  min-width: 100vw;
   z-index: 10;
   display: flex;
   align-items: center;
@@ -23,7 +23,8 @@
 .nav__rightContent {
   display: flex;
   align-items: center;
-  width: 150px;
+  min-width: 108px;
+  max-width: 150px;
   justify-content: space-evenly;
 }
 
@@ -33,7 +34,7 @@
   box-shadow: -6px -9px 10px 4px rgb(0 0 0);
 }
 .nav__logo {
-  min-width: 197px;
+  min-width: 167px;
   min-height: 40px;
   display: flex;
   justify-content: center;
@@ -79,4 +80,9 @@
 .nav__icons__night_notShow {
   font-size: 20px;
   color: #fff;
+}
+@media screen and (max-width: 500px) {
+  .nav__container {
+    padding: 0px 0px;
+  }
 }
