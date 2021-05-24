@@ -48,8 +48,8 @@ export default function Myskills() {
                 src={ResD}
                 style={{
                   objectFit: "contain",
-                  height: "100px",
-                  width: "100px",
+                  height: "80px",
+                  width: "80px",
                 }}
               />
             ) : (
@@ -58,8 +58,8 @@ export default function Myskills() {
                 src={Res}
                 style={{
                   objectFit: "contain",
-                  height: "100px",
-                  width: "100px",
+                  height: "80px",
+                  width: "80px",
                 }}
               />
             )}
@@ -77,8 +77,8 @@ export default function Myskills() {
                 src={FrontD}
                 style={{
                   objectFit: "contain",
-                  height: "100px",
-                  width: "100px",
+                  height: "80px",
+                  width: "80px",
                 }}
               />
             ) : (
@@ -87,8 +87,8 @@ export default function Myskills() {
                 src={Front}
                 style={{
                   objectFit: "contain",
-                  height: "100px",
-                  width: "100px",
+                  height: "80px",
+                  width: "80px",
                 }}
               />
             )}
@@ -106,8 +106,8 @@ export default function Myskills() {
                 src={WebD}
                 style={{
                   objectFit: "contain",
-                  height: "100px",
-                  width: "100px",
+                  height: "80px",
+                  width: "80px",
                 }}
               />
             ) : (
@@ -116,8 +116,8 @@ export default function Myskills() {
                 src={Web}
                 style={{
                   objectFit: "contain",
-                  height: "100px",
-                  width: "100px",
+                  height: "80px",
+                  width: "80px",
                 }}
               />
             )}
@@ -127,6 +127,32 @@ export default function Myskills() {
               Laveraging the power of Javascript and CSS's Animation feature to
               give life to the User Interfaces.
             </p>
+          </div>
+          <div data-aos="fade-up" className="skills__img__1">
+            {state.onDarkMode ? (
+              <img
+                alt="Loading..."
+                src={FrontD}
+                style={{
+                  objectFit: "contain",
+                  height: "80px",
+                  width: "80px",
+                }}
+              />
+            ) : (
+              <img
+                alt="Loading..."
+                src={Front}
+                style={{
+                  objectFit: "contain",
+                  height: "80px",
+                  width: "80px",
+                }}
+              />
+            )}
+
+            <h3>MERN-STACK DEVELOPER</h3>
+            <p>Build backened using nodejs,expressjs,mongodb,reactjs.</p>
           </div>
         </div>
       </section>
@@ -221,8 +247,8 @@ export default function Myskills() {
             <ProgressBar
               animated
               variant="success"
-              now={35}
-              label={`${35}%`}
+              now={50}
+              label={`${50}%`}
               className="skills__progressBar"
             />
           </div>
@@ -234,6 +260,28 @@ export default function Myskills() {
               variant="info"
               now={60}
               label={`${60}%`}
+              className="skills__progressBar"
+            />
+          </div>
+          <div data-aos="fade-up" className="skills__img__1">
+            <h4>Express</h4>
+
+            <ProgressBar
+              animated
+              variant="dark"
+              now={50}
+              label={`${50}%`}
+              className="skills__progressBar"
+            />
+          </div>
+          <div data-aos="fade-up" className="skills__img__1">
+            <h4>C++/Problem-Solving</h4>
+
+            <ProgressBar
+              animated
+              now={40}
+              variant="danger"
+              label={`${40}%`}
               className="skills__progressBar"
             />
           </div>

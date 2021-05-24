@@ -25,7 +25,13 @@ export default function Contact() {
       <div data-aos="fade-right" className="contact__leftSide">
         <div style={{ display: "flex" }}>
           <img src={line} alt="..." />
-          <div style={{ display: "flex", flexDirection: "column" }}>
+          <div
+            style={{
+              display: "flex",
+              width: "100vw",
+              justifyContent: "center",
+            }}
+          >
             <h4>Got A Project?</h4>
             <span className="contact__span">Let's Talk</span>
           </div>
