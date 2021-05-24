@@ -58,13 +58,13 @@ export default function About() {
   useEffect(() => {
     if (animate) {
       gsap.to(divRef, {
-        duration: 0.5,
+        duration: 0.2,
         x: width,
         y: height,
         ease: "none",
       });
     } else {
-      gsap.to(divRef, { duration: 1, x: 0, y: 0 });
+      gsap.to(divRef, { duration: 0.2, x: 0, y: 0 });
     }
   }, [animate, height, width]);
 

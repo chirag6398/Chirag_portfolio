@@ -11,7 +11,7 @@ export default function Contact() {
 
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
     });
   }, []);
   return (

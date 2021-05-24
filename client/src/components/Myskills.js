@@ -16,7 +16,7 @@ export default function Myskills() {
 
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 500,
     });
   }, []);
 
