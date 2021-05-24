@@ -17,7 +17,7 @@ export default function Footer() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 500,
     });
   }, []);
 
