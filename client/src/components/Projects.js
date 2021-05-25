@@ -12,7 +12,7 @@ export default function Project() {
 
   useEffect(() => {
     AOS.init({
-      duration: 500,
+      duration: 2000,
     });
   }, []);
 

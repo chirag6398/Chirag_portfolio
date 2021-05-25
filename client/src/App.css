@@ -5,6 +5,7 @@
   flex-direction: column;
   z-index: 1;
   overflow: scroll;
+  width: 100vw;
 }
 .profile__container::-webkit-scrollbar {
   display: none;
