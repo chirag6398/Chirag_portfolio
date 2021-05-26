@@ -3,7 +3,6 @@ import "../styles/message.css";
 export default function Message() {
   const [data, setData] = useState({ name: "", email: "", message: "" });
   const inputHandler = (e) => {
-    console.log(data);
     setData({ ...data, [e.target.name]: e.target.value });
   };
   const submitHandler = async (e) => {
@@ -186,6 +185,7 @@ export default function Message() {
             <fieldset>
               <label>Name</label>
               <input
+                className="message__input"
                 type="text"
                 value={data.name}
                 onChange={inputHandler}
@@ -196,6 +196,7 @@ export default function Message() {
             <fieldset>
               <label>Email</label>
               <input
+                className="message__input"
                 type="email"
                 value={data.email}
                 onChange={inputHandler}
@@ -206,6 +207,7 @@ export default function Message() {
             <fieldset className="message__textfield">
               <label>Message</label>
               <textarea
+                className="message__input"
                 type="text"
                 value={data.message}
                 onChange={inputHandler}

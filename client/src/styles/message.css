@@ -179,7 +179,7 @@ button:hover {
   .message__form {
     color: white;
   }
-  input textarea {
+  .message__input {
     color: cornsilk;
   }
 }

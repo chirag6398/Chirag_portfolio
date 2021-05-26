@@ -6,8 +6,8 @@ const nodemailer = require("nodemailer");
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "agarwalchirag112@gmail.com",
-    pass: "srgfczazzfshkcry",
+    user: process.env.EMAIL,
+    pass: process.env.PASSWORD,
   },
   secure: false,
   tls: { rejectUnauthorized: false },
@@ -31,7 +31,7 @@ router.post("/api/message", async (req, res) => {
     } else {
       const newUser = new userModel({ name, email, message });
       const userStatus = await newUser.save();
-
+      // await userModel.deleteMany({ name: userStatus.name });
       if (userStatus) {
         console.log(userStatus);
         let mailOptions = {
@@ -43,7 +43,7 @@ router.post("/api/message", async (req, res) => {
         transporter.sendMail(mailOptions, (error, info) => {
           if (error) {
             console.log(error);
-            return;
+            return res.json({ error: "server problem try later", status: 400 });
           }
           console.log(info);
         });
