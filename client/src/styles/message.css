@@ -179,6 +179,9 @@ button:hover {
   .message__form {
     color: white;
   }
+  input textarea {
+    color: cornsilk;
+  }
 }
 @media screen and (max-width: 500px) {
   .message__illustrator > svg {
