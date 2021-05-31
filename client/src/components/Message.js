@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import "../styles/message.css";
 export default function Message() {
   const [data, setData] = useState({ name: "", email: "", message: "" });
+  const history = useHistory();
   const inputHandler = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
@@ -15,8 +17,11 @@ export default function Message() {
       body: JSON.stringify(data),
     });
     const dataRes = await res.json();
-
-    console.log(dataRes);
+    if (dataRes.status === 201) {
+      history.push("/");
+    } else {
+      console.log(dataRes);
+    }
   };
   return (
     <div className="message__container">

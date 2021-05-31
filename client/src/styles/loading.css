@@ -1,0 +1,42 @@
+.loading__ext {
+  display: flex;
+  flex: 1;
+  height: 100vh;
+}
+.col {
+  display: flex;
+  flex: 0.2;
+  height: 100vh;
+  background-color: #f8f5f2;
+  animation-name: col;
+  animation-duration: 0.5s;
+  animation-name: col;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.col1 {
+  animation-delay: 0s;
+}
+.col2 {
+  animation-delay: 0.05s;
+}
+.col3 {
+  animation-delay: 0.1s;
+}
+.col4 {
+  animation-delay: 0.15s;
+}
+.col5 {
+  animation-delay: 0.2s;
+}
+@keyframes col {
+  from {
+    height: 0vh;
+  }
+  to {
+    height: 100vh;
+  }
+}
