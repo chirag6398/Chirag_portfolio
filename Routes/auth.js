@@ -22,9 +22,8 @@ transporter.verify(function (error, success) {
 router.post("/api/message", async (req, res) => {
   try {
     const { name, email, message } = req.body;
-    console.log(req.body);
+
     if (!name || !email || !message) {
-      console.log("not fill completely");
       return res
         .status(401)
         .json({ error: "plz fill all fields", status: 401 });
@@ -40,20 +39,31 @@ router.post("/api/message", async (req, res) => {
           subject: "messege send successfully",
           text: `hello ${userStatus.name}, thanks for messaging i will get in touch with you asap `,
         };
+        let mailOptions2 = {
+          from: "no-reeply@gmail.com",
+          to: "agarwalchirag112@gmail.com",
+          subject: "somone message you and visited your portfolio",
+          text: `hello ${userStatus.name}, thanks for messaging i will get in touch with you asap `,
+        };
+
         transporter.sendMail(mailOptions, (error, info) => {
           if (error) {
             console.log(error);
             return res.json({ error: "server problem try later", status: 400 });
           }
-          console.log(info);
         });
-        console.log("user save");
+
+        transporter.sendMail(mailOptions2, (error, info) => {
+          if (error) {
+            console.log(error);
+            return res.json({ error: "server problem try later", status: 400 });
+          }
+        });
 
         return res
           .status(201)
           .json({ message: "message send successfully", status: 201 });
       } else {
-        console.log("user not save");
         return res
           .status(401)
           .json({ message: "message not save", status: 401 });

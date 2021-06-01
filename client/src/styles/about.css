@@ -9,6 +9,22 @@
   z-index: 3;
   justify-content: center;
 }
+.about__Content {
+  line-height: 2;
+  letter-spacing: 1px;
+}
+.about__name {
+  display: flex;
+  margin-left: 50px;
+  flex-wrap: wrap;
+
+  margin-top: 30px;
+}
+
+.about__nameDark > h2 {
+  color: white;
+}
+
 .about__mainContent {
   display: flex;
   flex-direction: column;

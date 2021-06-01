@@ -42,7 +42,13 @@ export default function About() {
           <img className="about__myImg" src={myImg} alt="..." />
         </div>
         <div>
-          <p className={state.onDarkMode ? "about__paraContent" : undefined}>
+          <p
+            className={
+              state.onDarkMode
+                ? "about__paraContent about__Content"
+                : "about__Content"
+            }
+          >
             Hi there, this is
             <span>
               <b> Chirag</b>
@@ -50,7 +56,7 @@ export default function About() {
             . A front-end web developer using
             <span className="about__highlights">react-js</span> library. I work
             with my college technical society team
-            <span className="about__highlights">Conatus</span>.I am doing my
+            <span className="about__highlights"> Conatus</span>.I am doing my
             Btech with Computer Science. I love to learn,explore,travel and
             expertise in the field of web Development.
           </p>
