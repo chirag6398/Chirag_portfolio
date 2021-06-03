@@ -8,6 +8,12 @@ export default function Loading() {
       <div className="col col3"></div>
       <div className="col col4"></div>
       <div className="col col5"></div>
+      <div className="loading__centerLoader">
+        <div className="loading__dot"></div>
+        <div className="loading__1"></div>
+        <div className="loading__2"></div>
+        <div className="loading__3"></div>
+      </div>
     </div>
   );
 }

@@ -12,7 +12,7 @@ export default function Nav() {
   };
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 440) {
         setShow(true);
       } else {
         if (show) {
@@ -22,7 +22,7 @@ export default function Nav() {
     });
     return () => {
       window.removeEventListener("scroll", () => {
-        if (window.scrollY > 200) {
+        if (window.scrollY > 440) {
           setShow(true);
         }
       });

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 .about__container {
   min-width: 200px;
   height: auto;
@@ -17,10 +18,17 @@
   display: flex;
   margin-left: 50px;
   flex-wrap: wrap;
-
-  margin-top: 30px;
+  visibility: hidden;
+  margin-top: 54px;
 }
-
+.about__nameDark {
+  color: white;
+}
+.about__name > span {
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 900;
+}
 .about__nameDark > h2 {
   color: white;
 }
@@ -76,8 +84,22 @@
 .about__mainContent .about__paraContent {
   color: white;
 }
+.about__btnDiv {
+  margin-left: 50px;
+}
+
 @media all and (max-width: 500px) {
   .about__container {
     margin-left: 20px;
+    margin-bottom: 30px;
+  }
+  .about__name {
+    margin-left: 20px;
+  }
+  .about__btnDiv {
+    margin-left: 20px;
+  }
+  .about__name > span {
+    font-size: 40px;
   }
 }
