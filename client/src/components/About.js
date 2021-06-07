@@ -78,14 +78,14 @@ export default function About() {
     ).from(
       imgRef.firstElementChild,
       2,
-      { scale: 1.6, ease: Power3.easeOut },
-      0.35
+      { scale: 2.6, ease: Power3.easeOut },
+      0
     );
 
     tl.from(
       paraRef.firstElementChild,
       1,
-      { y: 1280, scale: 0.4, opacity: 0, ease: Power3.easeInOut },
+      { y: 1280, scale: 0.1, skewY: 7, opacity: 0, ease: "bounce" },
       0.2,
       "hehe"
     ).from(
@@ -112,7 +112,15 @@ export default function About() {
         arrayRef.current[12],
       ],
       0.5,
-      { y: 5, x: -10, opacity: 0, ease: Power3.easeOut, delay: 0 },
+      {
+        y: 5,
+        x: -10,
+        opacity: 0,
+        skewY: 8,
+        scale: 1.5,
+        ease: Power3.easeOut,
+        delay: 0.3,
+      },
 
       0.15,
       "heeh"
@@ -159,6 +167,7 @@ export default function About() {
             ref={(el) => {
               imgRef = el;
             }}
+            style={{ overflow: "hidden" }}
           >
             <img className="about__myImg" src={myImg} alt="..." />
           </div>
@@ -166,6 +175,7 @@ export default function About() {
             ref={(el) => {
               paraRef = el;
             }}
+            style={{ overflow: "hidden" }}
           >
             <p
               className={
@@ -175,15 +185,12 @@ export default function About() {
               }
             >
               Hi there, this is
-              <span>
-                <b> Chirag</b>
-              </span>
-              . A front-end web developer using
-              <span className="about__highlights">react-js</span> library. I
-              work with my college technical society team
-              <span className="about__highlights"> Conatus</span>.I am doing my
-              Btech with Computer Science. I love to learn,explore,travel and
-              expertise in the field of web Development.
+              <b> Chirag</b>. A front-end web developer using
+              <b> react-js</b> library. I work with my college technical society
+              team
+              <b> Conatus</b> .I am doing my Btech with Computer Science. I love
+              to learn,explore,travel and expertise in the field of web
+              Development.
             </p>
           </div>
         </div>
