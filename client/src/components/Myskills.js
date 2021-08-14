@@ -37,7 +37,7 @@ export default function Myskills() {
           />
           <div className="skills__checkout">
             <h4>Checkout</h4>
-            <h2 style={{ fontWeight: "900" }}>What I Do</h2>
+            <h2 style={{ fontSize: "4em", fontFamily: "impact" }}>What I Do</h2>
           </div>
         </div>
         <div className="skills__img">
@@ -171,7 +171,7 @@ export default function Myskills() {
           />
           <div className="skills__checkout">
             <h4>Checkout</h4>
-            <h2 style={{ fontWeight: "900" }}>What I Do</h2>
+            <h2 style={{ fontSize: "4em", fontFamily: "impact" }}>What I Do</h2>
           </div>
         </div>
         <div className="skills__img">
