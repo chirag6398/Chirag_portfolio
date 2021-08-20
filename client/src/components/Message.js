@@ -17,6 +17,7 @@ export default function Message() {
       body: JSON.stringify(data),
     });
     const dataRes = await res.json();
+    console.log("data res", dataRes);
     if (dataRes.status === 201) {
       history.push("/");
     } else {
