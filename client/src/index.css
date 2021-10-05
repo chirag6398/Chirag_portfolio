@@ -8,6 +8,10 @@
   text-align: justify;
   padding: 0px;
 }
+*::-webkit-scrollbar{
+  display: none;
+}
 h1,h2,h3,h4,h6,h5{
   margin: 0px;
+  text-align: center;
 }
