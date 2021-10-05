@@ -119,6 +119,7 @@ export default function Footer() {
             ? "footer__row lastRowDarkMode "
             : "footer__row lastRow "
         }
+        style={{maxWidth:"90vw"}}
       >
         <p>
           <b>copyright</b>

@@ -47,7 +47,7 @@ export default function About() {
       techRef,
       0.5,
       { x: -100, opacity: 0, ease: Power3.easeOut },
-      { x: 0, y: 60, opacity: 1, delay: 2 }
+      { x: 0,  opacity: 1, delay: 2 }
     );
 
     TweenMax.to([divNameRef, contRef, divRef], 0, {
@@ -163,19 +163,48 @@ export default function About() {
         className="about__container"
       >
         <div className="about__mainContent">
+          <div className="about__rightSide">
           <div
             ref={(el) => {
               imgRef = el;
             }}
-            style={{ overflow: "hidden" }}
+            className="aboutImg__div"
+           
           >
             <img className="about__myImg" src={myImg} alt="..." />
           </div>
+
+          <div
+        ref={(el) => (divNameRef = el)}
+        className={
+          state.onDarkMode ? "about__nameDark about__name" : "about__name"
+        }
+      >
+        {myName.map((val, ind) => {
+          return (
+            <span key={ind} ref={arrayAdder}>
+              {val}
+            </span>
+          );
+        })}
+
+        <h4
+          ref={(el) => {
+            techRef = el;
+          }}
+        >
+          MERN Developer
+        </h4>
+
+      </div>
+    </div>
+         
           <div
             ref={(el) => {
               paraRef = el;
             }}
-            style={{ overflow: "hidden" }}
+            className="about__paraDiv"
+          
           >
             <p
               className={
@@ -220,28 +249,7 @@ export default function About() {
           )}
         </div>
       </div>
-      <div
-        ref={(el) => (divNameRef = el)}
-        className={
-          state.onDarkMode ? "about__nameDark about__name" : "about__name"
-        }
-      >
-        {myName.map((val, ind) => {
-          return (
-            <span key={ind} ref={arrayAdder}>
-              {val}
-            </span>
-          );
-        })}
-
-        <h4
-          ref={(el) => {
-            techRef = el;
-          }}
-        >
-          MERN Developer
-        </h4>
-      </div>
+      
     </>
   );
 }

@@ -35,7 +35,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="contact__main_container">
-        <img data-aos="fade-right" src={callImg} alt="..." />
+        <img data-aos="fade-right" src={callImg} style={{maxWidth:"90vw"}} alt="..." />
         <div className="contact__rightSide">
           <div data-aos="fade-left" className="contact__phone">
             <FaPhoneAlt style={{ marginLeft: "3px" }} />
