@@ -74,12 +74,13 @@ textarea:focus {
 button {
   border: none;
   text-align: center;
+  cursor: pointer;
   margin: 10px;
   background-color: rgb(238, 115, 70);
-  width: 100px;
+  width: 110px;
   transition: 1s all ease-in;
   font-weight: 700;
-  height: 30px;
+  height: 40px;
   border-radius: 4px;
 }
 button:hover {
