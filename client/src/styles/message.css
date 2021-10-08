@@ -89,7 +89,7 @@ button:hover {
 .message__illustrator > svg {
   object-fit: contain;
   height: 200px;
-  max-width: 460px;
+  width: 360px;
   animation-name: illus;
   animation-iteration-count: infinite;
   animation-direction: alternate;

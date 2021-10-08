@@ -110,17 +110,22 @@
 .about__btnDiv {
   margin-left: 50px;
   position: fixed;
-  right: 4px;
+  /* right: 4px; */
   bottom: 4px;
   z-index: 100;
 }
 
 @media all and (max-width: 500px) {
   .about__container {
-   padding: 10px;
+   padding: 0px;
   }
-  .about__name {
+  .about__mainContent {
     /* margin-left: 20px; */
+    padding: 0px;
+    padding-top: 20px;
+  }
+  .about__rightSide{
+    padding-bottom: 15px;
   }
   .about__btnDiv {
     margin-left: 20px;

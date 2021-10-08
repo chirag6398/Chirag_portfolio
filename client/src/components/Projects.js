@@ -30,7 +30,7 @@ export default function Project() {
 
       <div className="project__img__container">
         <div data-aos="fade-up" className="project__imgContainer">
-          <img alt="loading.." style={{maxWidth:"90vw"}} src={netflix} style={{ width: "430.41px" }} />
+          <img alt="loading.." style={{maxWidth:"90vw"}} src={netflix}  />
           <a
             href="https://netflix-clone-by.herokuapp.com/"
             target="_blank"

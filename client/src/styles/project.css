@@ -27,17 +27,20 @@
   justify-content: space-around;
   align-items: center;
   margin-top: 30px;
+  width: 366.41px;
   flex-wrap: wrap;
   width: inherit;
 }
 .project__imgContainer {
   max-height: 200px;
-  margin: 30px;
+  /* margin: 30px; */
+  /* width: 100%; */
   margin-bottom: 50px;
 }
 .project__imgContainer > img {
   object-fit: contain;
   height: 200px;
+  /* width: 100%; */
 }
 .project__imgOverlay {
   position: relative;
@@ -59,4 +62,9 @@
 }
 .project__imgOverlay:hover {
   opacity: 0.6;
+}
+@media (max-width:500px) {
+  .project__imgContainer{
+    width: 100%;
+  }
 }
