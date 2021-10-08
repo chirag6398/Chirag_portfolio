@@ -30,7 +30,7 @@ export default function Project() {
 
       <div className="project__img__container">
         <div data-aos="fade-up" className="project__imgContainer">
-          <img alt="loading.." style={{maxWidth:"90vw"}} src={netflix}  />
+          <img alt="loading.."  src={netflix}  />
           <a
             href="https://netflix-clone-by.herokuapp.com/"
             target="_blank"
@@ -43,7 +43,7 @@ export default function Project() {
           </a>
         </div>
         <div data-aos="fade-up" className="project__imgContainer">
-          <img alt="loading.." style={{maxWidth:"90vw"}} src={instagram} />
+          <img alt="loading.."  src={instagram} />
           <a
             href="https://instagram-by-ch.herokuapp.com/"
             target="_blank"
@@ -56,7 +56,7 @@ export default function Project() {
           </a>
         </div>
         <div data-aos="fade-up" className="project__imgContainer">
-          <img alt="loading.." style={{maxWidth:"90vw"}} src={gitfetch} />
+          <img alt="loading.."  src={gitfetch} />
           <a
             href="https://netflix-clone-by.herokuapp.com/"
             target="_blank"
@@ -69,7 +69,7 @@ export default function Project() {
           </a>
         </div>
         <div data-aos="fade-up" className="project__imgContainer">
-          <img alt="loading.." style={{maxWidth:"90vw"}} src={mern} />
+          <img alt="loading.."  src={mern} />
           <a
             href="https://mernfirstproject.herokuapp.com/"
             target="_blank"

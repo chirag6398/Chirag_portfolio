@@ -40,7 +40,7 @@
 .project__imgContainer > img {
   object-fit: contain;
   height: 200px;
-  /* width: 100%; */
+  width: 100%;
 }
 .project__imgOverlay {
   position: relative;
