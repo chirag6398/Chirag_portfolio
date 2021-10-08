@@ -24,7 +24,7 @@ export default function Project() {
           : "project__container"
       }
     >
-      <div data-aos="fade-right" className="project__section__heading">
+      <div data-aos="fade-up" className="project__section__heading">
         <h3>Mini-Projects</h3>
       </div>
 

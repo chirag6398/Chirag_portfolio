@@ -29,7 +29,7 @@ export default function Myskills() {
             : "skills__section"
         }
       >
-        <div data-aos="fade-right" className="skills__heading">
+        <div data-aos="fade-up" className="skills__heading">
           <img
             alt="_____"
             src={line}
@@ -163,7 +163,7 @@ export default function Myskills() {
             : "skills__section"
         }
       >
-        <div data-aos="fade-right" className="skills__heading">
+        <div data-aos="fade-up" className="skills__heading">
           <img
             alt="_____"
             src={line}

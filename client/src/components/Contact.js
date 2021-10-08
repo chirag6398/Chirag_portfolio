@@ -23,7 +23,7 @@ export default function Contact() {
           : "contact__container"
       }
     >
-      <div data-aos="fade-right" className="contact__leftSide">
+      <div data-aos="fade-up" className="contact__leftSide">
         <div
           style={{ display: "flex", width: "100vw", justifyContent: "center" }}
         >
@@ -35,13 +35,13 @@ export default function Contact() {
         </div>
       </div>
       <div className="contact__main_container">
-        <img data-aos="fade-right" src={callImg} style={{maxWidth:"90vw"}} alt="..." />
+        <img data-aos="fade-up" src={callImg} style={{maxWidth:"90vw"}} alt="..." />
         <div className="contact__rightSide">
-          <div data-aos="fade-left" className="contact__phone">
+          <div data-aos="fade-up" className="contact__phone">
             <FaPhoneAlt style={{ marginLeft: "3px" }} />
             <span>6398356528</span>
           </div>
-          <div data-aos="fade-left" className="contact__email">
+          <div data-aos="fade-up" className="contact__email">
             <MdEmail style={{ marginRight: "3px" }} />
             <span>agarwalchirag112@gmail.com</span>
           </div>
