@@ -58,7 +58,7 @@ export default function Project() {
         <div data-aos="fade-up" className="project__imgContainer">
           <img alt="loading.."  src={gitfetch} />
           <a
-            href="https://netflix-clone-by.herokuapp.com/"
+            href="https://fech-git-repo.herokuapp.com/"
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: "none" }}
