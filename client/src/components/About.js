@@ -214,12 +214,12 @@ export default function About() {
               }
             >
               Hi there, this is
-              <b> Chirag</b>. A front-end web developer using
-              <b> react-js</b> library. I work with my college technical society
+              <b> Chirag</b>. A Web Developer using
+              <b> MERN-STACK</b> . I am doing my Btech with Computer Science . I work in my college technical society
               team
-              <b> Conatus</b> .I am doing my Btech with Computer Science. I love
-              to learn,explore,travel and expertise in the field of web
-              Development.
+              <b> Conatus</b> . I love
+              to learn ,explore ,travel and having expertise in the field of Web
+              Development and problem solving in c++.
             </p>
           </div>
         </div>

@@ -6,13 +6,13 @@ import { ContextValue } from "../App";
 export default function Nav() {
   const { state, dispatch } = useContext(ContextValue);
   const [show, setShow] = useState(false);
-  // console.log(state.onDarkMode);
+  
   const darkModeHandler = () => {
     dispatch({ type: "CHANGE_MODE", payload: !state.onDarkMode });
   };
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 440) {
+      if (window.scrollY > 300) {
         setShow(true);
       } else {
         if (show) {

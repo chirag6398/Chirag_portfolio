@@ -152,7 +152,7 @@ export default function Myskills() {
             )}
 
             <h3>MERN-STACK DEVELOPER</h3>
-            <p>Build backened using nodejs,expressjs,mongodb,reactjs.</p>
+            <p>Build backened and front-end using node.js ,express.js ,mongodb ,react.js</p>
           </div>
         </div>
       </section>
