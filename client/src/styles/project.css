@@ -34,7 +34,7 @@
 .project__imgContainer {
   max-height: 200px;
  
-  min-width: 439px;
+  width: 400px;
   margin-bottom: 50px;
 }
 .project__imgContainer > img {
