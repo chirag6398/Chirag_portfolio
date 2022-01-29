@@ -4,6 +4,8 @@ import netflix from "../images/NetflixClne.JPG";
 import instagram from "../images/InstagramClone.JPG";
 import gitfetch from "../images/fechgitrepo.JPG";
 import mern from "../images/MernProject.JPG";
+import ecommerce from "../images/Ecommerce.png";
+import chat from "../images/Chat.png"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { ContextValue } from "../App";
@@ -77,7 +79,33 @@ export default function Project() {
             style={{ textDecoration: "none" }}
           >
             <div className="project__imgOverlay">
-              <span>Authentication </span>
+              <span>Simple-Authentication</span>
+            </div>
+          </a>
+        </div>
+        <div data-aos="fade-up" className="project__imgContainer">
+          <img alt="loading.."  src={ecommerce} />
+          <a
+            href="https://ecommerce-usingmern.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <div className="project__imgOverlay">
+              <span>Ecommerce-Site</span>
+            </div>
+          </a>
+        </div>
+        <div data-aos="fade-up" className="project__imgContainer">
+          <img alt="loading.."  src={chat} />
+          <a
+            href="https://real-time-chat-using-socket.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            <div className="project__imgOverlay">
+              <span>Chat-Application</span>
             </div>
           </a>
         </div>
