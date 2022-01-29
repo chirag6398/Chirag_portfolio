@@ -10,6 +10,7 @@ export default function Message() {
     setData({ ...data, [e.target.name]: e.target.value });
   };
 
+  
   const submitHandler = async (e) => {
     e.preventDefault();
     setIsProcessing(true);

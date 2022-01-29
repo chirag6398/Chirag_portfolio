@@ -279,9 +279,9 @@ export default function Myskills() {
 
             <ProgressBar
               animated
-              now={40}
+              now={85}
               variant="danger"
-              label={`${40}%`}
+              label={`${85}%`}
               className="skills__progressBar"
             />
           </div>
