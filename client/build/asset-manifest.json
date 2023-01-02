@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.80715301.chunk.css",
+    "main.js": "/static/js/main.14833bfe.chunk.js",
+    "main.js.map": "/static/js/main.14833bfe.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8a7cc09c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8a7cc09c.js.map",
+    "static/css/2.7fc9bc2b.chunk.css": "/static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.5cadcbc1.chunk.js": "/static/js/2.5cadcbc1.chunk.js",
+    "static/js/2.5cadcbc1.chunk.js.map": "/static/js/2.5cadcbc1.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.7fc9bc2b.chunk.css.map": "/static/css/2.7fc9bc2b.chunk.css.map",
+    "static/css/main.80715301.chunk.css.map": "/static/css/main.80715301.chunk.css.map",
+    "static/js/2.5cadcbc1.chunk.js.LICENSE.txt": "/static/js/2.5cadcbc1.chunk.js.LICENSE.txt",
+    "static/media/Chat.41627030.png": "/static/media/Chat.41627030.png",
+    "static/media/Ecommerce.f278e001.png": "/static/media/Ecommerce.f278e001.png",
+    "static/media/FrontDark.efd3a083.png": "/static/media/FrontDark.efd3a083.png",
+    "static/media/InstagramClone.b3b6ee50.JPG": "/static/media/InstagramClone.b3b6ee50.JPG",
+    "static/media/MernProject.77263bca.JPG": "/static/media/MernProject.77263bca.JPG",
+    "static/media/NetflixClne.faa8d6a2.JPG": "/static/media/NetflixClne.faa8d6a2.JPG",
+    "static/media/message.css": "/static/media/bg.b90b8929.svg",
+    "static/media/call.df6cbe5b.svg": "/static/media/call.df6cbe5b.svg",
+    "static/media/fechgitrepo.a543e1c9.JPG": "/static/media/fechgitrepo.a543e1c9.JPG",
+    "static/media/myImg.f13093f8.jpg": "/static/media/myImg.f13093f8.jpg",
+    "static/media/webAniDark.37902b21.png": "/static/media/webAniDark.37902b21.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8a7cc09c.js",
+    "static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.5cadcbc1.chunk.js",
+    "static/css/main.80715301.chunk.css",
+    "static/js/main.14833bfe.chunk.js"
+  ]
+}

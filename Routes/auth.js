@@ -2,7 +2,11 @@ const express = require("express");
 const router = express.Router();
 const userModel = require("../model/userSchema");
 const nodemailer = require("nodemailer");
-// srgfczazzfshkcry
+
+
+// yzewcydwdynisiav
+
+
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
@@ -25,11 +29,12 @@ const sendMailHandler = (userStatus) => {
     from: "no-reeply@gmail.com",
     to: "agarwalchirag112@gmail.com",
     subject: "somone message you and visited your portfolio",
-    text: ` ${userStatus.name}, has message me ${userStatus.message} `,
+    text: ` ${userStatus.name} with email:${userStatus.email}, has message me ${userStatus.message}  `,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
+
       console.log(error);
       return 400;
       // return res.json({ error: "server problem try later", status: 400 });
@@ -44,6 +49,8 @@ const sendMailHandler = (userStatus) => {
     }
   });
 };
+
+
 router.post("/api/message", async (req, res) => {
   try {
     const { name, email, message } = req.body;
@@ -53,13 +60,17 @@ router.post("/api/message", async (req, res) => {
         .status(401)
         .json({ error: "plz fill all fields", status: 401 });
     } else {
+
       const newUser = new userModel({ name, email, message });
       const userStatus = await newUser.save();
-      await userModel.deleteMany({ name: userStatus.name });
+      console.log(userStatus);
 
+      await userModel.deleteMany({ name: userStatus.name });
+     
       if (userStatus) {
         const code = sendMailHandler(userStatus);
         if (code === 400) {
+          console.log("fail email");
           return res.json({ error: "server problem try later", status: 400 });
         }
 

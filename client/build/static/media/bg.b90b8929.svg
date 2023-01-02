@@ -1,0 +1,30 @@
+<svg width="1429" height="864" viewBox="0 0 1429 864" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Desktop - 1" clip-path="url(#clip0)">
+<rect width="1429" height="864" fill="url(#paint0_linear)"/>
+<g id="Vector 1" filter="url(#filter0_b)">
+<path d="M1064 0H-2V864H1432V202.565C1309.33 208.077 1064 175.28 1064 0Z" fill="#342727"/>
+</g>
+<g id="centercurve">
+<path id="centercurve_2" fill-rule="evenodd" clip-rule="evenodd" d="M1338.63 1041.51C1433.04 1041.51 1509.57 958.442 1509.57 855.979C1509.57 753.515 1433.04 670.451 1338.63 670.451C1301.34 670.451 1266.84 683.412 1238.74 705.41C1210.64 683.412 1176.14 670.452 1138.85 670.452C1107.71 670.452 1078.52 679.486 1053.38 695.272C1028.23 679.486 999.044 670.451 967.908 670.451C926.278 670.451 888.124 686.603 858.475 713.448C830.957 686.603 795.545 670.451 756.907 670.451C713.003 670.451 673.264 691.306 644.54 725.007C613.59 691.306 570.774 670.451 523.47 670.451C478.213 670.451 437.064 689.54 406.484 720.704C375.905 689.54 334.756 670.451 289.499 670.451C245.804 670.451 205.939 688.245 175.718 717.52C145.497 688.245 105.632 670.452 61.9378 670.452C-32.4685 670.452 -109 753.515 -109 855.979C-109 958.443 -32.4685 1041.51 61.9378 1041.51C105.632 1041.51 145.498 1023.71 175.718 994.438C205.939 1023.71 245.804 1041.51 289.499 1041.51C334.756 1041.51 375.905 1022.42 406.484 991.253C437.064 1022.42 478.213 1041.51 523.47 1041.51C570.774 1041.51 613.59 1020.65 644.54 986.951C673.264 1020.65 713.003 1041.51 756.907 1041.51C795.545 1041.51 830.957 1025.35 858.475 998.509C888.124 1025.35 926.278 1041.51 967.908 1041.51C999.044 1041.51 1028.23 1032.47 1053.38 1016.69C1078.52 1032.47 1107.71 1041.51 1138.85 1041.51C1176.14 1041.51 1210.64 1028.55 1238.74 1006.55C1266.84 1028.54 1301.34 1041.51 1338.63 1041.51Z" fill="url(#paint1_linear)"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_b" x="-37" y="-35" width="1504" height="934" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="17.5"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear" x1="1327.5" y1="-27.5" x2="714.5" y2="864" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF8906"/>
+<stop offset="1" stop-color="#FF8906" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="700.284" y1="670.451" x2="700.284" y2="1041.51" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF8906"/>
+<stop offset="1" stop-color="#FF8906" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0">
+<rect width="1429" height="864" fill="white"/>
+</clipPath>
+</defs>
+</svg>

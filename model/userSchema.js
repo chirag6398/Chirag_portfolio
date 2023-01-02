@@ -14,6 +14,7 @@ const userSchema = new mongoose.Schema({
     required: true,
   },
 });
+
 userSchema.methods.CreateNewUser = async function (name, email, message) {
   try {
     this.name = name;
@@ -33,4 +34,5 @@ userSchema.methods.addMessage = async function (message) {
   }
 };
 const UserModel = mongoose.model("message", userSchema);
+
 module.exports = UserModel;
