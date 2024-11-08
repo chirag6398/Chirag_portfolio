@@ -1,16 +1,15 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../styles/message.css";
 export default function Message() {
   const [data, setData] = useState({ name: "", email: "", message: "" });
-  const [isProcessing,setIsProcessing]=useState(false);
-  const history = useHistory();
+  const [isProcessing, setIsProcessing] = useState(false);
+  const history = useNavigate();
   console.log(isProcessing);
   const inputHandler = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
 
-  
   const submitHandler = async (e) => {
     e.preventDefault();
     setIsProcessing(true);
@@ -23,10 +22,10 @@ export default function Message() {
       body: JSON.stringify(data),
     });
     const dataRes = await res.json();
-   
+
     if (dataRes.status === 201) {
       setIsProcessing(false);
-      
+
       history.push("/");
     } else {
       console.log(dataRes);
@@ -192,7 +191,7 @@ export default function Message() {
           </svg>
         </div>
         <div className="message__form">
-          <form onSubmit={submitHandler} >
+          <form onSubmit={submitHandler}>
             <h3>
               <b>Let's Talk</b>
             </h3>
@@ -229,7 +228,9 @@ export default function Message() {
                 placeholder="enter your message"
               />
             </fieldset>
-            <button type="submit"   disabled={isProcessing} >{isProcessing?"processing":"submit"}</button>
+            <button type="submit" disabled={isProcessing}>
+              {isProcessing ? "processing" : "submit"}
+            </button>
           </form>
         </div>
       </div>

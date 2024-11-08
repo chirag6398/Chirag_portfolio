@@ -1,131 +1,15 @@
-import React, { useContext, useEffect, useState, useRef } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import "../styles/about.css";
 import myImg from "../images/myImg.jpg";
-import { gsap, TweenMax, Power3, TimelineLite } from "gsap";
 import { ContextValue } from "../App";
 import { MdMessage } from "react-icons/md";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function About() {
   const { state } = useContext(ContextValue);
   const [animate, setAnimate] = useState(false);
-  let imgRef = useRef(null);
-  let divRef = useRef(null);
-  let contRef = useRef(null);
-  const history = useHistory();
-  let paraRef = useRef(null);
-  let tl = new TimelineLite();
-  let divNameRef = useRef(null);
-  let arrayRef = useRef([]);
-  let techRef = useRef(null);
-  arrayRef.current = [];
-  let myName = [
-    "C",
-    "h",
-    "i",
-    "r",
-    "a",
-    "g",
-    "A",
-    "g",
-    "r",
-    "a",
-    "w",
-    "a",
-    "l",
-  ];
-
-  const arrayAdder = (el) => {
-    if (el && !arrayRef.current.includes(el)) {
-      arrayRef.current.push(el);
-    }
-  };
-
-  useEffect(() => {
-    gsap.fromTo(
-      techRef,
-      0.5,
-      { x: -100, opacity: 0, ease: Power3.easeOut },
-      { x: 0,  opacity: 1, delay: 2 }
-    );
-
-    TweenMax.to([divNameRef, contRef, divRef], 0, {
-      css: { visibility: "visible" },
-    });
-
-    TweenMax.to(
-      [
-        arrayRef.current[6],
-        arrayRef.current[7],
-        arrayRef.current[8],
-        arrayRef.current[9],
-        arrayRef.current[10],
-        arrayRef.current[11],
-        arrayRef.current[12],
-      ],
-      0,
-      {
-        css: { color: "brown" },
-      }
-    );
-
-    tl.from(
-      imgRef,
-      1.2,
-      { y: 1280, opacity: 0, ease: Power3.easeOut },
-      "hehe"
-    ).from(
-      imgRef.firstElementChild,
-      2,
-      { scale: 2.6, ease: Power3.easeOut },
-      0
-    );
-
-    tl.from(
-      paraRef.firstElementChild,
-      1,
-      { y: 1280, scale: 0.1, skewY: 7, opacity: 0, ease: "bounce" },
-      0.2,
-      "hehe"
-    ).from(
-      divRef,
-      2,
-      { x: 1200, scale: 0.3, opacity: 0, ease: Power3.easeInOut },
-      0.5
-    );
-
-    tl.staggerFrom(
-      [
-        arrayRef.current[0],
-        arrayRef.current[1],
-        arrayRef.current[2],
-        arrayRef.current[3],
-        arrayRef.current[4],
-        arrayRef.current[5],
-        arrayRef.current[6],
-        arrayRef.current[7],
-        arrayRef.current[8],
-        arrayRef.current[9],
-        arrayRef.current[10],
-        arrayRef.current[11],
-        arrayRef.current[12],
-      ],
-      0.5,
-      {
-        y: 5,
-        x: -10,
-        opacity: 0,
-        skewY: 8,
-        scale: 1.5,
-        ease: Power3.easeOut,
-        delay: 0.3,
-      },
-
-      0.15,
-      "heeh"
-    );
-  }, []);
+  const history = useNavigate();
 
   const messageHandler = () => {
     history.push("/talk");
@@ -156,56 +40,25 @@ export default function About() {
 
   return (
     <>
-      <div
-        ref={(el) => {
-          contRef = el;
-        }}
-        className="about__container"
-      >
+      <div className="about__container">
         <div className="about__mainContent">
           <div className="about__rightSide">
-          <div
-            ref={(el) => {
-              imgRef = el;
-            }}
-            className="aboutImg__div"
-           
-          >
-            <img className="about__myImg" src={myImg} alt="..." />
+            <div className="aboutImg__div">
+              <img className="about__myImg" src={myImg} alt="..." />
+            </div>
+
+            <div
+              className={
+                state.onDarkMode ? "about__nameDark about__name" : "about__name"
+              }
+            >
+              <span>Chirag Agrawal</span>
+
+              <h4>MERN Developer</h4>
+            </div>
           </div>
 
-          <div
-        ref={(el) => (divNameRef = el)}
-        className={
-          state.onDarkMode ? "about__nameDark about__name" : "about__name"
-        }
-      >
-        {myName.map((val, ind) => {
-          return (
-            <span key={ind} ref={arrayAdder}>
-              {val}
-            </span>
-          );
-        })}
-
-        <h4
-          ref={(el) => {
-            techRef = el;
-          }}
-        >
-          MERN Developer
-        </h4>
-
-      </div>
-    </div>
-         
-          <div
-            ref={(el) => {
-              paraRef = el;
-            }}
-            className="about__paraDiv"
-          
-          >
+          <div className="about__paraDiv">
             <p
               className={
                 state.onDarkMode
@@ -213,25 +66,32 @@ export default function About() {
                   : "about__Content"
               }
             >
-              Hi there, this is
-              <b> Chirag</b>. A Web Developer using
-              <b> MERN-STACK</b> . I am doing my Btech with Computer Science . I work in my college technical society
-              team
-              <b> Conatus</b> . I love
-              to learn ,explore ,travel and having expertise in the field of Web
-              Development and problem solving in c++.
+              Hi, I'm Chirag, a passionate Software Engineer with over 2 years
+              of hands-on experience in backend development. I specialize in
+              Node.js, Golang, and cloud-based architectures, with a strong
+              focus on building scalable, high-performance systems. Currently, I
+              work at Trackier, where I design and develop solutions for complex
+              backend challenges, including data aggregation, real-time
+              processing, and analytics. My expertise spans across various
+              backend technologies such as MongoDB, ClickHouse, Kafka, and
+              Redis, enabling me to create efficient, data-driven applications.
+              I also have a strong foundation in report analytics using
+              aggregation techniques, which helps transform data into valuable
+              insights for businesses. In addition to backend, I have a solid
+              understanding of frontend technologies and the MERN stack
+              (MongoDB, Express.js, React, Node.js), allowing me to deliver
+              full-stack solutions when needed. My passion lies in continuous
+              learning and problem-solving, and I am always eager to explore new
+              technologies and methodologies.I enjoy exploring new places and
+              learning from different cultures, which fuels my creativity and
+              drive in both my personal and professional life.
             </p>
           </div>
         </div>
       </div>
 
       <div className="about__btnDiv">
-        <div
-          className="btn"
-          ref={(el) => {
-            divRef = el;
-          }}
-        >
+        <div className="btn">
           {animate ? (
             <MdMessage
               onClick={messageHandler}
@@ -249,7 +109,6 @@ export default function About() {
           )}
         </div>
       </div>
-      
     </>
   );
 }

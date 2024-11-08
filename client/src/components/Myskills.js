@@ -152,7 +152,10 @@ export default function Myskills() {
             )}
 
             <h3>MERN-STACK DEVELOPER</h3>
-            <p>Build backened and front-end using node.js ,express.js ,mongodb ,react.js</p>
+            <p>
+              Build backened and front-end using node.js ,express.js ,mongodb
+              ,react.js
+            </p>
           </div>
         </div>
       </section>
@@ -176,6 +179,99 @@ export default function Myskills() {
         </div>
         <div className="skills__img">
           <div data-aos="fade-up" className="skills__img__1">
+            <h4>MongoDb</h4>
+
+            <ProgressBar
+              animated
+              variant="success"
+              now={80}
+              label={`${80}%`}
+              className="skills__progressBar"
+            />
+          </div>
+          <div data-aos="fade-up" className="skills__img__1">
+            <h4>Clickhouse</h4>
+
+            <ProgressBar
+              animated
+              variant="success"
+              now={80}
+              label={`${80}%`}
+              className="skills__progressBar"
+            />
+          </div>
+          <div data-aos="fade-up" className="skills__img__1">
+            <h4>Node-js</h4>
+
+            <ProgressBar
+              animated
+              variant="success"
+              now={80}
+              label={`${80}%`}
+              className="skills__progressBar"
+            />
+          </div>
+
+          <div data-aos="fade-up" className="skills__img__1">
+            <h4>Go-lang</h4>
+
+            <ProgressBar
+              animated
+              variant="success"
+              now={80}
+              label={`${80}%`}
+              className="skills__progressBar"
+            />
+          </div>
+
+          <div data-aos="fade-up" className="skills__img__1">
+            <h4>Redis</h4>
+
+            <ProgressBar
+              animated
+              variant="success"
+              now={80}
+              label={`${80}%`}
+              className="skills__progressBar"
+            />
+          </div>
+          <div data-aos="fade-up" className="skills__img__1">
+            <h4>Kafka</h4>
+
+            <ProgressBar
+              animated
+              variant="success"
+              now={80}
+              label={`${80}%`}
+              className="skills__progressBar"
+            />
+          </div>
+
+          <div data-aos="fade-up" className="skills__img__1">
+            <h4>Express/Koa</h4>
+
+            <ProgressBar
+              animated
+              variant="dark"
+              now={80}
+              label={`${80}%`}
+              className="skills__progressBar"
+            />
+          </div>
+
+          <div data-aos="fade-up" className="skills__img__1">
+            <h4>C++/Problem-Solving</h4>
+
+            <ProgressBar
+              animated
+              now={85}
+              variant="danger"
+              label={`${85}%`}
+              className="skills__progressBar"
+            />
+          </div>
+
+          <div data-aos="fade-up" className="skills__img__1">
             <h4>React-js</h4>
 
             <ProgressBar
@@ -190,9 +286,9 @@ export default function Myskills() {
 
             <ProgressBar
               animated
-              now={70}
+              now={90}
               variant="success"
-              label={`${70}%`}
+              label={`${90}%`}
               className="skills__progressBar"
             />
           </div>
@@ -208,80 +304,13 @@ export default function Myskills() {
             />
           </div>
           <div data-aos="fade-up" className="skills__img__1">
-            <h4>GSAP</h4>
-
-            <ProgressBar
-              animated
-              now={30}
-              variant="danger"
-              label={`${30}%`}
-              className="skills__progressBar"
-            />
-          </div>
-          <div data-aos="fade-up" className="skills__img__1">
             <h4>CSS</h4>
 
             <ProgressBar
               animated
               variant="dark"
-              now={60}
-              label={`${60}%`}
-              className="skills__progressBar"
-            />
-          </div>
-
-          <div data-aos="fade-up" className="skills__img__1">
-            <h4>MongoDb</h4>
-
-            <ProgressBar
-              animated
-              variant="success"
-              now={40}
-              label={`${40}%`}
-              className="skills__progressBar"
-            />
-          </div>
-          <div data-aos="fade-up" className="skills__img__1">
-            <h4>Node-js</h4>
-
-            <ProgressBar
-              animated
-              variant="success"
-              now={50}
-              label={`${50}%`}
-              className="skills__progressBar"
-            />
-          </div>
-          <div data-aos="fade-up" className="skills__img__1">
-            <h4>Bootstrap</h4>
-
-            <ProgressBar
-              animated
-              variant="info"
-              now={60}
-              label={`${60}%`}
-              className="skills__progressBar"
-            />
-          </div>
-          <div data-aos="fade-up" className="skills__img__1">
-            <h4>Express</h4>
-
-            <ProgressBar
-              animated
-              variant="dark"
-              now={50}
-              label={`${50}%`}
-              className="skills__progressBar"
-            />
-          </div>
-          <div data-aos="fade-up" className="skills__img__1">
-            <h4>C++/Problem-Solving</h4>
-
-            <ProgressBar
-              animated
-              now={85}
-              variant="danger"
-              label={`${85}%`}
+              now={80}
+              label={`${80}%`}
               className="skills__progressBar"
             />
           </div>

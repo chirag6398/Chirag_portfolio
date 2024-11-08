@@ -1,5 +1,4 @@
 import React, { createContext, useReducer, useState, useEffect } from "react";
-import Particle from "./Particles/Particle";
 import "./App.css";
 import Message from "./components/Message.js";
 import Nav from "./components/Nav";
@@ -10,7 +9,7 @@ import Myskills from "./components/Myskills";
 import Contact from "./components/Contact";
 import Loading from "./components/Loading";
 import { initialState, reducer } from "./Reducer/Reducer";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 export const ContextValue = createContext();
 
 function App() {
@@ -37,20 +36,23 @@ function App() {
               : "profile__container"
           }
         >
-          <Switch>
-            <Route exact path="/">
-              <Nav />
-              <About />
-              <Myskills />
-              <Project />
-              <Contact />
-              <Footer />
-              <Particle />
-            </Route>
-            <Route exact path="/talk">
-              <Message />
-            </Route>
-          </Switch>
+          <Nav />
+
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <About />
+                  <Myskills />
+                  <Project />
+                  <Contact />
+                  <Footer />
+                </>
+              }
+            />
+            <Route path="/talk" element={<Message />} />
+          </Routes>
         </div>
       </BrowserRouter>
     </ContextValue.Provider>
